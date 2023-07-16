@@ -45,8 +45,8 @@ const borrarDinero= async (req,res) => {
 
 const actualizarDinero= async (req,res) => {
     try {
-        const accion = await Acciones.findOneAndUpdate({_id:req.params.id},req.body,{new:true})
-        res.json(accion)
+        const dinero = await Dinero.findOneAndUpdate({_id:req.params.id},req.body,{new:true})
+        res.json(dinero)
     } catch (error) {
         console.log(error);
     }

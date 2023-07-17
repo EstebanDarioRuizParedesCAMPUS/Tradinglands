@@ -15,7 +15,6 @@ const obtenerUnaTrader = async (req,res) => {
         res.json(rtrader)
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Trader no existe"})
         console.log(error);
     }
@@ -37,7 +36,6 @@ const borrarTrader = async (req,res) => {
         res.status(204).send()
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Trader no existe"})
         console.log(error);
     }

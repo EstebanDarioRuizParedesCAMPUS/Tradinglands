@@ -15,7 +15,6 @@ const obtenerUnDinero = async (req,res) => {
         res.json(dinero)
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Dinero no existe"})
         console.log(error);
     }
@@ -37,7 +36,6 @@ const borrarDinero= async (req,res) => {
         res.status(204).send()
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Dinero no existe"})
         console.log(error);
     }

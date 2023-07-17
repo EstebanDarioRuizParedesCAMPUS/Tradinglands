@@ -15,7 +15,6 @@ const obtenerUnaAccion = async (req,res) => {
         res.json(accion)
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Acción no existe"})
         console.log(error);
     }
@@ -37,7 +36,6 @@ const borrarAccion = async (req,res) => {
         res.status(204).send()
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Acción no existe"})
         console.log(error);
     }

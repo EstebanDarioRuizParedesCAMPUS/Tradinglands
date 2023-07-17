@@ -15,7 +15,6 @@ const obtenerUnaTipoDinero = async (req,res) => {
         res.json(tipoDinero)
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Tipo de Dinero no existe"})
         console.log(error);
     }
@@ -37,7 +36,6 @@ const borrarTipoDinero= async (req,res) => {
         res.status(204).send()
     } catch (error) {
         res.status(404)
-        res.status(500)
         res.send({error:"Tipo de Dinero no existe"})
         console.log(error);
     }

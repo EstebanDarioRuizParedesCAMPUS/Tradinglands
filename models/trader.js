@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const TipoDineroShema = mongoose.Schema({
+const TraderShema = mongoose.Schema({
     Nombre: {
         type: String,
         required: true,
@@ -26,6 +26,6 @@ const TipoDineroShema = mongoose.Schema({
     timestamps: true,
 })
 
-const TipoDinero = mongoose.model("tipoDineros", TipoDineroShema)
+const Trader = mongoose.model("traders", TraderShema)
 
-export default TipoDinero
+export default Trader

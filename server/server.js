@@ -4,6 +4,7 @@ import AccionesRouter from "../routes/acciones.routes.js"
 import DineroRouter from "../routes/dinero.routes.js"
 import TipoDineroRrouter from "../routes/tipoDinero.routes.js"
 import TraderRouter from "../routes/trader.routes.js"
+import conectarDb from "./conexion.js"
 
 class Server{
     
@@ -11,7 +12,6 @@ class Server{
         this.app = express()
         this.port = process.env.PORT
         this.userPath = '/API'
-
         this.middleware()
         this.routes()
     }
@@ -33,6 +33,11 @@ class Server{
             console.log(`Server running on port ${this.port}`);
         })
     }
+
+    databaseCnx(){
+        conectarDb()
+    }
+
 }
 
 export default Server

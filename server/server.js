@@ -10,6 +10,7 @@ class Server{
     
     constructor(){
         this.app = express()
+        this.app.use(express.json())
         this.port = process.env.PORT
         this.userPath = '/API'
         this.middleware()

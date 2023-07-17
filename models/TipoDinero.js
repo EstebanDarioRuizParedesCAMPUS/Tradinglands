@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 const TipoDineroShema = mongoose.Schema({
     dineroFiat: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     CryptoDinero: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     }
 },

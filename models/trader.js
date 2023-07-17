@@ -3,22 +3,22 @@ import mongoose from "mongoose";
 const TraderShema = mongoose.Schema({
     Nombre: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     Edad: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     nacionalidad: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     Presupuesto: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
 },

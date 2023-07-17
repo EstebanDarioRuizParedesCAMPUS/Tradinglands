@@ -3,17 +3,17 @@ import mongoose from "mongoose";
 const accionesShema = mongoose.Schema({
     porcentajeAccion: {
         type: String,
-        required: true,
+        require: true,
         trim:true,
     },
     valorAccion: {
         type: String,
-        required:true,
+        require:true,
         trim:true,
     },
     tipoAccion :{
         type: String,
-        required:true,
+        require:true,
         trim:true,  
     }
 },

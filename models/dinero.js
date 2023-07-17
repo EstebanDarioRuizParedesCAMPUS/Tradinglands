@@ -3,22 +3,22 @@ import mongoose from "mongoose";
 const DineroShema = mongoose.Schema({
     CryptoMoenda: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     DineroFiat: {
         type: String,
-        required: true,
+        require: true,
         trim:true
     },
     Valoracion: {
         type: Number,
-        required: true,
+        require: true,
         trim:true
     },
     Inflacion: {
         type: Number,
-        required: true,
+        require: true,
         trim:true
     },
 },
